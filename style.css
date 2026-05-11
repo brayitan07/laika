@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+#info-encabezado{
+    background-color: #180344;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+#info-general{
+    background-color: #36079C;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+#info-general img{
+    width: 50px;
+}
+#buscar{
+    max-width: 400px;
+    height: 45px;
+    font-size:  16px;
+    border-radius: 8px;
+    border: 2px solid #180344;
+}
+#ingresar{
+    width: 150px;
+    height: 50px;font-size: 16px;
+    background-color: #180344;;
+    color: white;
+    border: none;
+}
+nav ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+nav > ul{
+    display: flex;
+    background-color: #F2F2F2;
+}
+nav > ul> li{
+    position: relative;
+    padding: 15px 20px;
+    color: black;
+    cursor: pointer;
+}
+nav >ul>li:hover{
+    background-color: gray;
+}
+/*Para ocultar el submenu*/
+nav ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: gray;
+}
+nav ul ul li{
+    color: black;
+    padding: 10px;
+}
+/* para mostrar el submenu*/
+nav ul li:hover>ul{
+    display: block;
+}
+nav ul ul li:hover{
+    background-color: #6d2cff;
+}
+header,nav{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index:1000;
+}
+header{
+    top:0;
+}
+nav{
+    top:100px;
+}
+body{
+    margin-top: 180px;
+}
+#banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+#banner img{
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+#mascotas{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    gap:20px
+}
+#perro{
+    background-color: lightgoldenrodyellow;
+    border-radius: 10px;
+}
+#gato{
+    background-color: lightblue;
+    border-radius: 10px;
+}
+#perro,#gato{
+    display: flex;
+    align-items: center;
+    gap:15px;
+
+}
+#perro img, #gato img{
+    width: 300px;
+}
+.parrafo{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.caja{
+    display: flex;
+    gap:30px;
+    align-items: stretch;
+    padding: 50px 170px;
+    background-color: #F2F2F2;
+}
+article h2{
+    color:#180344;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: auto;
+}
+.parrafo-articulo{
+    font-size: 20px;
+    text-align: justify;
+}
+.caja-imagenes, article{
+    flex:1;
+}
+.caja-imagenes{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    height: auto;
+}
+.caja-imagenes img{
+    flex: 1 1 cal(50%-10px);
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.grande{
+    flex: 1 1 100%;
+    height: 200px;
+}
+
+.linea-con-icono{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin: 10px 10px;
+}
+.linea-con-icono img{
+    width: 50px;
+}
+.linea-con-icono hr{
+    flex: 1;
+    border: none;
+    background-color: #F2F2F2;
+    height: 2px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+footer > div{
+    flex: 1;
+    min-width: 200px;
+}
+.info-legal{
+    flex: 1 1 100%;
+    border-top: 1px solid gray;
+}
+.info-legal p{
+    margin-bottom: 8px;
+}
+h3{
+    color: #36079C;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+footer span{
+    display: block;
+    margin-bottom: 8px;
+}
+.copyright-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px
+}
+.copyright-row img{
+    max-height: 300px;
+    height: auto;
+}
+input[type=email]{
+    width: 150px;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 12px 16px;
+}
+input[type=submit]{
+    background-color: #6d2cff;
+    color: white;
+    font-size: 12px;
+    border: none;
+}
